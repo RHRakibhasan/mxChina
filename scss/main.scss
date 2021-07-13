@@ -1,0 +1,540 @@
+@import "variables";
+@import "extend"; 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+ul, ol{
+    list-style: none;
+    padding: 0;
+    margin:0;
+} 
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+h1,h2,h3,h4,h5.h6{
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+}
+header{
+  transition: all .5s;  
+}
+.sticky{
+    transition: all .5s;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    width: 100%;  
+    background:$color-tar; 
+    z-index: 9999;
+}
+ 
+#hero .owl-theme .owl-dots .owl-dot span {
+    width:15px;
+    height:15px;
+    margin: 5px 7px; 
+    background: #ffffffff;
+    border-radius: 50%;
+}
+
+#hero .owl-theme .owl-dots, .owl-theme .owl-nav {
+    position: absolute;
+    left: 183px; 
+    bottom: 0px;
+}
+#hero .owl-theme .owl-dots .owl-dot.active span {
+    background: #FFAA00;
+    border:1px solid #ffffffff;
+    transform: scale(1.3);
+}
+// heaer area scss start
+#header{
+    background-image: url(../img/hero_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 78vh;
+    .header{
+        padding:15px 0 0px 0;
+        margin-bottom: 50px;
+        line-height: 70px;
+        .container-fluid{
+            width:90%;
+            .menu{
+                li{
+                    padding-left: 70px;
+                    a{
+                        font-family:$fm_roboto;
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: $w-color;  
+                    }
+                    .menu_btn{
+                        @extend %btn_primary;
+                        transition: all 0.5s ease-in-out;         
+                            &:hover{
+                            background:$w-color;
+                            color:$heading_color;
+                            transition: all 0.5s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //  hero area scss start
+    #hero{
+        .container-fluid{
+            width: 90%;
+            h1{
+                font-size: 70px;
+                font-family: $fm_inter;
+                font-weight: 400;
+                color: $w-color;
+            }
+            p{
+                font-family: $fm_inter;
+                font-weight: 400;
+                font-size: 20px;
+                color: $w-color;
+                margin: 20px 0 30px 0;
+            }
+            .hero_btn{
+                @extend %btn_primary;
+                color:$heading_color;
+                background:$w-color;
+                border: 1px solid $w-color;
+                transition: all .5s ease-in-out;
+                &:hover{
+                    transition: all .5s ease-in-out;
+                    background: transparent;
+                    color: $w-color;
+                    border: 1px solid $w-color;
+                }
+            }
+        }
+    }
+    //  hero area scss end
+
+}
+// heaer area scss start
+// why use area scss start
+#why_use{
+    padding: 125px 0 0 0;
+    .why_use_heading{
+        margin-bottom: 72px;
+        h2{
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color:$heading_color;
+        }
+        p{
+            color:$primary_color;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    .why_use_option{
+        display:flex;
+        justify-content:  center;
+        align-items: center;
+        flex-direction: column;  
+        background:  #ffffff;
+        padding: 50px 20px  47px 20px;
+        border-radius: 10px;
+        transition: all .5s;
+        margin-bottom:40px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0px 23px 46px #b0baec21;
+            transition: all .5s;
+        }
+        h4{
+            text-align: center;
+            margin-top: 33px;
+            font-size:24px;
+            font-weight:400;
+            color:$text_color;
+            font-family: $fm_inter;
+        }
+    }
+}
+// why use area scss end
+// newsletter area scss start
+#newsletter{
+    margin-bottom: 110px;
+    .newsletter_con{ 
+        background: url(../img/newsletter_bg.png);
+        padding: 100px 0;
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position:center; 
+        text-align: center;
+        h3{
+            font-size: 55px;
+            font-weight: 600;
+            color: $w_color;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 38px;
+            color: $w_color;
+        }
+        .newsletter{
+            width: 100%;
+            form{ 
+                .newsletter_form{ 
+                    position: relative; 
+                    width: 55%;
+                    color: #ffffff;
+                    .form-control{  
+                        padding:25px 30px;
+                        height: 70px;
+                    }
+                    .newsletter_btn { 
+                        position: absolute;
+                        top:3px;
+                        right:4px;
+                        @extend %btn_sec;
+                        background:$color_sec;
+                        border:1px solid #ffffff;
+                        border-radius:4px;
+                        color: #ffffff;
+                        transition: all 0.5s;
+                        &:hover{
+                            background:transparent;
+                            border:1px solid $color_sec;
+                            color:$color_sec;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+// newsletter area scss end 
+// about area scss start
+#about{ 
+    margin-top: 110px;
+    .about_con{   
+        padding: 75px 0;
+        h3{
+            font-size: 40px;
+            color: $heading_color;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        .about_right_btn{
+            @extend %btn_sec;
+            background: $color-tar;
+            border: 1px solid $color-tar;
+            color:$w_color;
+            transition: all 0.5s;
+            &:hover{
+                background: transparent;
+                color: $color-tar;
+
+                transition: all 0.5s;
+            }
+        }
+    }
+} 
+// about area scss end
+// quesition area scss start
+ #quesition{
+     margin-top: 95px;
+     .quesition_left{
+         .quesition_heading{
+             h4{ 
+                 font-size:40px;
+                 color:$heading_color;
+                 margin-bottom:43px;
+                 text-align: center;  
+             }
+         }
+         .quesition_acordient{
+             #accordionExample{
+                 .mb-accordion{
+                     margin-bottom: 40px;
+                     .accordion-item{
+                         .accordion-header{
+                             font-size: 20px;
+                             font-weight: 500;
+                             color:$heading_color ;
+                             font-family: $fm_sg;
+                            .accordion-button{
+                                border: 1px solid #E8E9FF;
+                                box-shadow: 0px 6px 22px #3d6aff13;
+                                position: relative;
+                                height:75px;
+                                padding: 27px 20px;
+                                &::after { 
+                                    position: absolute;
+                                    right: 15px; 
+                                    content: "+";
+                                    background:$color-tar;
+                                    height:23px;
+                                    width:23px;
+                                    border-radius: 50%;
+                                    color:$w_color ;
+                                    font-size: 20px;
+                                    text-align: center;
+                                    line-height: 23px;
+                                    font-weight: 700;
+                                }
+                            }
+                            .accordion-button:not(.collapsed) {
+                                box-shadow: none;
+                                color: $heading_color;
+                                background:$w_color; 
+                                transition: all .05s;
+                                border: 2px solid $color-tar;
+                                border-bottom: none;
+                                &::after { 
+                                    position: absolute;
+                                    right: 15px; 
+                                    content: "-";
+                                    background:$color-tar;
+                                    height:23px;
+                                    width:23px;
+                                    border-radius: 50%;
+                                    color:$w_color;
+                                    font-size: 25px;
+                                    text-align: center;
+                                    line-height: 18px;
+                                    font-weight: 900;
+                                    
+                                }
+                            }
+                         }
+                     }
+                     .accordion-body{
+                        padding: 0 20px 25px 20px;
+                        transition: all .05s;
+                        font-size: 16px;
+                        font-weight:400;
+                        color:$primary_color;
+                        font-family: $fm_roboto;
+                        border: 2px solid $color-tar;
+                        border-top: none;
+                        margin: 0 -1px;
+                        border-radius:0px 0px  5px 5px;
+                     }
+                 }
+             }
+         }
+     }
+ }
+// quesition area scss end
+// Third party  area scsss start
+ #third_party{
+     margin-top: 115px;
+     .third_party_heading{
+         h4{
+             font-size: 50px;
+             font-weight: 600;
+             color:$heading_color;
+             margin-bottom: 20px;
+         }
+         p{
+            font-size: 18px;
+            font-weight: 500;
+            color:$primary_color ;
+         }
+     }
+     .brand_slider{
+         margin-top: 55px;
+         .single_slider{
+             img{
+                 padding:35px 25px;
+                 background:$w_color; 
+                 transition: all 0.5s;
+                 &:hover{
+                     box-shadow: 0px 15px 60px #9e9e9e18; 
+                     transition: all 0.5s;
+                 }
+                 .p-0{
+                     padding: 0;
+                 }
+             }
+         }
+     }
+ }
+// Third party  area scsss end
+// Contact Us parwt scss start
+#contact_us{
+    margin:100px 0;
+   .contact_hrading{
+       h4{
+           font-size: 50px;
+           font-weight: 600;
+           margin-bottom: 11px;
+           color: $heading_color;
+       }
+       p{
+           margin-bottom: 55px;
+           font-size: 18px;
+           font-weight:500;
+           color: $primary_color;
+       }
+   }
+   .contact_right_from{
+       padding:40px;
+       background:#ffffff;
+       box-shadow: 0px 3px 40px #8d8d8d33; 
+       border-radius: 10px;
+       form{
+           input{
+               display: block;
+               padding: 27px;
+               font-family: $fm_inter;
+               font-size:18px ;
+               color:#555555 ;
+               border-radius:5px;
+               border:1px solid #7070708e;
+               background:#FFFFFF;
+               height:80px;
+               width:100%;
+               margin-bottom:30px;
+           } 
+           textarea{
+               display: block;
+               padding: 27px;
+               font-family: $fm_inter;
+               font-size:18px ;
+               color:#555555 ;
+               border-radius:5px;
+               border:1px solid #7070708e;
+               background:#FFFFFF;
+               height:204px;
+               width:100%;
+               margin-bottom:30px;
+           }
+       }
+       .contact_btn{
+           @extend %btn_sec;
+           background:$color-tar;
+           color:$w_color ;
+           border: 1px solid  $color-tar;
+           transition: all 0.5s;
+           &:hover{
+               background: transparent;
+               border: 1px solid  $color-tar;
+               color:$color-tar;
+               transition: all 0.5s;
+           }
+       }
+   }
+}
+// Contact Us parwt scss end
+// footer area scss start
+#footer{
+    background: url(../img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    background-size:cover;    
+    .container{ 
+        .footer_con{ 
+            padding-top: 50px;
+            margin-bottom: 70px;
+        }
+        .footer_left{
+            margin: 230px 0 0 0;
+            p{ 
+                letter-spacing:1px;
+                margin-top: 20px;
+                font-size: 18px;
+                color:$w-color;
+            }
+            ul{
+                li{  
+                    margin: 30px 20px 0 0px;
+                    transition: all 0.5s;
+                    display: inline-block;
+                    height: 52px;
+                    width: 52px;
+                    border:1px solid #ffffff;
+                    border-radius:50%;
+                    line-height: 50px;
+                    text-align: center;
+                    a{
+                        color: #ffffff;
+                        font-size: 26px;
+                    }
+                    &:hover{
+                        background: #FFD402;
+                        border:1px solid #FFD402;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+        .footer_center{
+            margin: 230px 0 0 0;
+            h5{        
+                line-height: 40px;
+                text-decoration: underline;
+                font-size:25px;
+                color:$w-color;
+            }
+            ul{
+                li{
+                    font-size:18px;
+                   line-height:40px;  
+                    a{
+                    color:$w-color;
+                    }
+                }
+            }
+        }
+        .footer_right{
+            margin: 230px 0 0 0;
+            h5{
+                font-size:25px;
+                font-weight: 600;
+                color:$w-color;
+                line-height:47px;
+                text-decoration: underline;
+            }
+            ul{
+                li{
+                    a{
+                        font-size: 18px;
+                        color:$w-color;
+                        font-weight:400;
+                        line-height:47px;
+                    }
+                }
+            }
+        }
+        .hr{
+            height: 1px;
+            width: 100%;
+            background: $w-color;
+            margin: 0 0 35px 0;
+        }
+        .Copyright{
+            color: $w-color;
+            margin-bottom: 35px;
+        }
+
+    }
+} 
+// footer area scss end
+@import "responsive";

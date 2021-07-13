@@ -1,0 +1,23 @@
+%btn_primary{
+    line-height: 60px;
+    padding: 0 40px;
+    font-size:18px;
+    font-weight: 500;
+    background: transparent;
+    color:#ffffff;
+    border:1px solid #ffffff;
+    border-radius: 30px;
+    display: inline-block;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+%btn_sec{
+    line-height: 60px;
+    padding:0 48px;
+    font-size:20px;
+    font-weight: 600;    
+    display: inline-block;
+    border-radius: 4px;
+    text-transform: capitalize;
+    cursor: pointer;
+}

@@ -1,0 +1,710 @@
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+@media only screen and (min-width: 1500px) and (max-width: 1920px) {
+     #hero .owl-theme .owl-dots, .owl-theme .owl-nav {
+        position: absolute;
+        left: 300px;
+        bottom: 75px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    #header{
+        .header{
+            .container-fluid{
+                .menu li {
+                    padding-left: 60px;
+                }
+            }
+        }
+    }
+    #why_use{ 
+        .why_use_heading{ 
+            h2 {
+                font-size: 40px;
+            }
+            p{
+                font-size: 16px;
+            }
+        } 
+    }
+    #newsletter{ 
+        .newsletter_con{
+            h3 {
+                font-size: 45px; 
+            }
+            p{
+                font-size: 15px;
+            }
+            .newsletter form{
+                .newsletter_form{
+                    .newsletter_btn { 
+                        right: 4px; 
+                    }
+                }
+            }
+        }
+    }
+    #quesition{
+        .quesition_left{
+            .quesition_acordient{
+                #accordionExample{
+                    .mb-accordion {
+                        margin-bottom: 35px;
+                    }
+                }
+            }
+        }
+    }
+    #third_party{
+        .third_party_heading{
+            h4 {
+                font-size: 43px;
+            }
+        }
+    }
+    #contact_us{
+        .contact_hrading{
+            h4 {
+                font-size: 45px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    #contact_us{
+        .contact_right_from{
+            form{
+                textarea { 
+                    height: 136px;
+                }
+            }
+        } 
+    }
+    #footer{  
+        .container{
+            .footer_center{
+                h5 {
+                    margin-bottom: 20px; 
+                    font-size: 23px;
+                }
+                ul{
+                    li { 
+                        line-height: 40px;
+                    }
+                }
+            } 
+        }
+    }
+}
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #header{
+        .header{
+            .container-fluid{
+                .menu{
+                    li {
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+        #hero{
+            .container-fluid{
+                h1 {
+                    font-size: 50px; 
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+                
+        }
+    }
+    #why_use{ 
+            padding: 75px 0 0px 0;
+        .why_use_heading{
+            h2 {
+                font-size: 30px; 
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .why_use_option{
+            h4 {
+                margin-top: 10px;
+                font-size: 18px; 
+            }
+        }
+    }
+    #newsletter{
+        .newsletter_con{
+            h3 {
+                font-size: 39px; 
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 15px;
+            } 
+        }
+    }
+    #about{
+        .about_con{
+            h3 {
+                font-size: 35px; 
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 15px;
+                margin-bottom:10px;
+            }
+        }
+    }
+    #quesition{
+        .quesition_left{
+            .quesition_heading{
+                h4 {
+                    font-size: 31px;
+                    margin-bottom: 20px;
+                }
+            }
+            .quesition_acordient{
+                #accordionExample{
+                    .mb-accordion{
+                        margin-bottom: 10px;
+                        .accordion-item{
+                            .accordion-header{
+                                .accordion-button { 
+                                    height: 70px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #contact_us{
+        .contact_hrading{
+            h4 {
+                font-size: 40px;
+            }
+        }
+        .contact_right_from{
+            form input {
+                padding: 18px;
+                height: 53px;
+            }
+            form{
+                textarea {
+                    padding: 14px;
+                    height: 116px;
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }        
+        } 
+    }  
+    #footer{
+        .container{
+            .contact_left_img{
+                figure {
+                    margin: 0 0 1rem;
+                    display: flex;
+                    transform: translate(0, 50%);
+                }
+            }
+            .footer_center{
+                h5 {
+                    margin-bottom: 0; 
+                }
+                ul{
+                    li {
+                        margin-bottom: 0px;  
+                    }
+                }
+            }
+            .footer_right{
+                h5 { 
+                    margin-bottom: 13px;
+                }
+                ul{
+                    li {
+                        font-size: 15px; 
+                    }
+                }
+            }
+        } 
+    }   
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #header .header .container-fluid .menu li .menu_btn, #header #hero .container-fluid .hero_btn {
+        line-height: 45px;
+        padding: 0 15px; 
+    }
+    #header{
+        .header{
+            .container-fluid{
+                width: 95%;
+                .menu{
+                    li {
+                        padding-left:25px;
+                    }
+                }
+            }
+        }
+        #hero{
+            .container-fluid{
+                h1 {
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            } 
+        }
+    }
+    #why_use{ 
+        .why_use_heading{
+            h2 {
+                font-size: 30px; 
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 15px;
+            }
+        } 
+        .why_use_option{
+            h4 {
+                margin-top: 25px;
+                font-size: 17px;
+            }
+        }
+    }
+    #newsletter{
+        .newsletter_con{ 
+            padding: 30px 0; 
+            background-size: cover;
+            background-position: bottom left;
+            text-align: center;
+            h3 {
+                font-size: 37px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 15px;
+            }
+            .newsletter{
+                form{
+                    .newsletter_form { 
+                        width: 77%; 
+                    }
+                }
+            }
+        }
+    }
+    #about{
+        .about_con { 
+            text-align: center;
+        }
+    }
+    #third_party{
+        .third_party_heading{
+            h4 {
+                font-size: 40px; 
+            }
+        }
+    } 
+    #contact_us {
+        margin:0;
+    }   
+    #footer{
+        .container {
+            width: 100%;
+            .footer_left{
+                p {
+                    font-size: 15px;
+                }
+            }
+            .footer_center{
+                h5 { 
+                    font-size: 20px;
+                }
+                ul{
+                    li{
+                        line-height: 36px;
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }  
+            }
+            .footer_right{
+                h5 {
+                    font-size: 20px;
+                }
+                ul{
+                    li {
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+} 
+// Small devices (landscape phones, 576px and up)
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    #hero .owl-theme .owl-dots, .owl-theme .owl-nav {
+        position: absolute;
+        left: 436px;
+        bottom: 452px;
+    }
+    #header{
+        background-position: bottom left;
+        #hero{
+            .container-fluid{
+                h1 {
+                    font-size: 30px; 
+                }
+                font-size: 15px;
+            }
+        }
+    }
+    #why_use{
+        .why_use_heading{
+            h2 {
+                font-size: 25px; 
+                margin-bottom:15px;
+            }
+            p{
+                font-size: 11px;
+            }
+        } 
+    }
+    #why_use{
+        .why_use_option { 
+            height: 194px;
+            width: 100%;
+            h4 {
+                margin-top: 5px;
+                font-size: 15px;
+            }
+        }  
+    }
+    #newsletter{
+        .newsletter_con{ 
+            padding: 38px 0 103px 0; 
+            background-size: cover;
+            background-position: bottom left; 
+            h3 {
+                font-size: 30px; 
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 10px;
+                margin-bottom: 15px;
+            }
+            .newsletter{
+                form{
+                    .newsletter_form{
+                        .newsletter_btn {
+                            position: absolute;
+                            top: 75px;
+                            right: 0; 
+                            left: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #about{
+        .about_con{
+            text-align: center;
+            h3 {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    #quesition{
+        .quesition_left{
+            .quesition_heading{
+                h4 {
+                    font-size: 35px; 
+                    margin-bottom: 43px; 
+                }
+            }
+        }
+    }
+    #third_party{
+        .third_party_heading{
+            h4 {
+                font-size: 30px; 
+                margin-bottom: 20px;
+            }
+        }
+    }
+    #contact_us{
+        position: relative;
+        .contact_hrading{
+            h4 {
+                font-size: 35px; 
+                margin-bottom: 11px; 
+            }
+        }
+        .contact_left_img{
+            position: absolute;
+            bottom:-471px;
+        }
+        .contact_right_from{
+            form input {
+                padding: 18px;
+                height: 60px;
+                margin-bottom: 20px;
+                form{
+                    textarea {
+                        padding: 25px;
+                        height: 150px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    #footer {
+        background-position: top;
+        padding-top: 235px;
+        .container{
+            .footer_right {
+                margin: 25px 0 0 0;
+            }
+        }
+    }
+ }
+ 
+/* Small Device = 320px */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    #hero .owl-theme .owl-dots, .owl-theme .owl-nav {
+        position: absolute;
+        left: 183px;
+        bottom: -65px;
+    } 
+    #header .header .container-fluid .menu li .menu_btn, #header #hero .container-fluid .hero_btn,#newsletter .newsletter_con .newsletter form .newsletter_form .newsletter_btn, #contact_us .contact_right_from .contact_btn,#about .about_con .about_right_btn {
+        line-height: 42px;
+        padding: 0 20px;
+        font-size: 14px; 
+    }
+    #header{ 
+        background-position: top left;
+        min-height: 100vh;
+        .header {
+            padding:0;
+            margin-bottom: 0px; 
+            line-height: 70px;
+        }
+        #hero{
+            .container-fluid{
+                h1 {
+                    font-size: 26px; 
+                }
+                p {
+                    font-size: 11px;
+                    margin: 10px 0 15px 0;
+                }
+                .hero_btn{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    #about{
+        .about_con{
+            h3 {
+                font-size: 25px; 
+                margin-bottom: 20px;
+            }
+        }
+    } 
+    #why_use{
+        padding: 55px 0 0 0;
+        .why_use_heading{
+            h2 {
+                font-size: 23px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                color: #221F1F;
+            }
+            p{
+                font-size: 10px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    #why_use{
+        .why_use_option {
+        height: 185px;
+            h4{
+                margin-top: 17px;
+                font-size: 15px;
+            }
+        }
+    }
+    #newsletter{
+        margin-bottom: -50px;
+        .newsletter_con{  
+            padding: 100px 0; 
+            background-size: cover;
+            background-position: bottom left; 
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .newsletter{
+                form{
+                    .newsletter_form{
+                            position: relative;
+                            width: 93%;
+                            color: #ffffff;
+                        .newsletter_btn {
+                            top:58px;
+                            left: 0;
+                            right: 0;
+                        }
+                        .form-control {
+                            padding: 5px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #about{
+        .about_con{
+            padding: 0;
+            text-align: center;
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 10px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    #quesition{
+        .quesition_left{
+            .quesition_heading{
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 23px;
+                }
+            }
+            .quesition_acordient{
+                #accordionExample{
+                    .mb-accordion {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    #third_party{
+        margin-top: 130px;
+        .third_party_heading{
+            h4 {
+                font-size: 18px; 
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        .brand_slider {
+            margin-top: 0px;
+        }
+    }
+    #contact_us{
+        margin:0 0  95px 0;
+        position: relative;
+        .contact_hrading{
+            h4 {
+                font-size: 30px; 
+                margin-bottom: 5px; 
+            }
+            p{
+                font-size: 15px;
+                margin-bottom: 25px;
+            }
+        }
+        .contact_left_img{           
+            position: absolute; 
+            bottom: -310px;
+        }
+        .contact_right_from {
+            padding: 20px;
+            form{
+                input {
+                    padding: 13px;
+                    font-size: 15px;
+                    height: 62px;
+                    margin-bottom: 15px;
+                }
+                textarea {
+                    padding: 12px;
+                    font-size: 14px;
+                    height: 119px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+    #footer { 
+        background-position: top left; 
+        .container{
+            width: 100%;
+            .footer_center{
+                margin: 40px 0 0 0;
+                h5 { 
+                    font-size: 19px;
+                } 
+                ul{
+                    li{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .footer_right{
+                margin: 40px 0 0 0 ;
+                h5 {
+                    font-size: 16px;
+                }
+                ul{
+                    li {
+                        a{
+                            font-size: 14px; 
+                            line-height:40px;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+ 
